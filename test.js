@@ -9,7 +9,7 @@ if (!fs.existsSync("index.html")) {
 const html = fs.readFileSync("index.html", "utf8");
 
 // Test for button 1
-//if (!html.includes("Button 1")) {
+if (!html.includes("Button 1")) {
     throw new Error("❌ Button 1 not found in HTML!");
 }
 
